@@ -1,5 +1,7 @@
 import AutoInput from './components/AutoInput'
 import Counter from './components/Counter'
+import MainLayout from './components/layouts/MainLayout'
+import Manager from './components/Manager'
 import ProductList from './components/ProductList'
 import Welcome from './components/Welcome'
 
@@ -16,7 +18,12 @@ function App() {
       {/* <AutoInput /> */}
 
       {/* useDeferredValue && startTransition && useTransition*/}
-      <ProductList />
+      {/* <ProductList /> */}
+
+      {/* React Portal */}
+      <MainLayout>
+        <Manager />
+      </MainLayout>
     </div>
   )
 }
